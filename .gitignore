@@ -1,8 +1,0 @@
-﻿node_modules/
-dist/
-out/
-.cache/
-*.log
-*.asar
-.DS_Store
-Thumbs.db
