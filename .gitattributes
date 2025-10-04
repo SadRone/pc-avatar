@@ -1,0 +1,2 @@
+﻿public/mediapipe/**/*.task filter=lfs diff=lfs merge=lfs -text
+public/mediapipe/**/*.wasm filter=lfs diff=lfs merge=lfs -text
