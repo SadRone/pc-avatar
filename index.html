@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>My Avatar (Realtime)</title>
+  <style>
+    html,body { margin:0; padding:0; background:#111; overflow:hidden; }
+    #hud { position:absolute; top:8px; left:10px; color:#eee; z-index:10; font:13px/1.4 system-ui; }
+    video { display:none; }
+    canvas#dbg { position:absolute; right:10px; bottom:10px; border:1px solid #333; }
+  </style>
+</head>
+<body>
+  <div id="hud">Init...</div>
+  <video id="cam" playsinline muted></video>
+  <canvas id="overlay" width="280" height="160"></canvas>
+
+  <!-- 렌더러 로드 -->
+  <script type="module" src="./renderer.js"></script>
+
+  <!-- 렌더러 에러를 HUD로 노출 -->
+  <script>
